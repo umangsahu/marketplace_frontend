@@ -8,6 +8,8 @@ import Box from '@mui/material/Box';
 import SignIn from '../components/Login';
 import SignUp from '../components/signup';
 
+import '../styles/login-signup.css'
+
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
   

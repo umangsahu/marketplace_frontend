@@ -1,0 +1,32 @@
+.css-yqsh8w {
+    max-width: 1024px !important;
+    margin: 20px auto !important;
+    width: 90% !important;
+}
+.css-19kzrtu {
+    padding: 5px !important;
+  }
+  @media (max-width:500px) {
+
+    .css-rjvy36 {
+        width: 280px !important;
+    }
+    .css-binzgt{
+        margin-top: 10px !important;
+    }
+    .css-h29gb{
+        width: 300px !important;
+    }
+  }
+  @media (max-width:330px) {
+
+    .css-rjvy36 {
+        width: 200px !important;
+    }
+    css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+        height: 0.438em !important;
+     }
+     .css-h29gb{
+        width: 200px !important;
+    }
+  }

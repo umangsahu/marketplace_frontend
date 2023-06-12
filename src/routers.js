@@ -13,6 +13,7 @@ import Singleproduct from "./Pages/Singleproduct";
 
 import {App} from "./App";
 import About from "./Pages/About";
+import Error from "./Pages/error";
 
 
  const router = createBrowserRouter([
@@ -54,6 +55,9 @@ import About from "./Pages/About";
       path: "/about",
       element: <About  />,
     
+  },{
+    path:'*',
+    element:<Error/>
   }
       ],
     },

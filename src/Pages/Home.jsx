@@ -18,10 +18,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 
-
-// import required modules
-import { Pagination } from "swiper";
-
 const Home = () => {
   const Data=useContext(userContext);
   const dispatch =useDispatch();
@@ -58,7 +54,13 @@ const Home = () => {
  <div className="sliderWrapper">
 
   
- <h2>Product Catalog</h2>
+ <h2>Featured Product</h2>
+ <div className="underline" style={{width:"100px",height:"4px",borderRadius:"5px",overflow:"hidden",display:"flex"}}>
+  <div className="one" style={{height:"100%",width:"25%",background:"#0A2342"}}></div>
+  <div className="two" style={{height:"100%",width:"25%",background:"#E8EC67"}}></div> 
+  <div className="three" style={{height:"100%",width:"25%",background:"#3423A6"}}></div>
+  <div className="four" style={{height:"100%",width:"25%",background:"#2E86AB"}}></div>
+ </div>
   
  <Swiper
         slidesPerView={3}

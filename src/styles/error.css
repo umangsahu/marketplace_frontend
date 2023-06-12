@@ -1,0 +1,63 @@
+div.error{
+    height: 100%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+padding: 30px;
+background: white;
+
+   
+}
+div.error div.bg{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40%;
+    width: 40%;
+}
+div .bg img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+
+}
+.text{
+    height: 40%;
+    width:50%;
+}
+.text h1{
+    color: darkblue;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+.text strong{
+    font-stretch: extra-condensed;
+}
+@media (max-width:866px){
+    div.error{
+        height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+    background: white;
+    flex-direction: column;
+    
+       
+    }
+    .text{
+        height: 40%;
+        width:100%;
+        text-align: center;
+    }
+    div.error div.bg{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        width: 100%;
+    }
+}

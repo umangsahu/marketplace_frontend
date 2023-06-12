@@ -4,7 +4,7 @@
 *{
 
     margin:0;
-    padding: 0px;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
 }
@@ -13,5 +13,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-  background-color: #f6f6f6
+  background-color: #f6f6f6;
+  margin:0;
+    padding: 0;
 }
