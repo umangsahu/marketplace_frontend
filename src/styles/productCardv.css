@@ -1,0 +1,13 @@
+.cardContainer{
+    width: 200px;
+    height: 300px;
+    
+}
+.cardContainer img{
+    height: 40%;
+    
+}
+.info{
+    color:red;
+
+}

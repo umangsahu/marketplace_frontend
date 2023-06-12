@@ -1,0 +1,199 @@
+.productsWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.productsWrapper .productContainer{
+    min-height: 400px;
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+.hor-card{
+    width: 1024px;
+    height: 180px;
+    display: flex;
+    padding: 5px;
+    transition: all 0.5s ease-in-out;
+    margin: 10px;
+    overflow: hidden;
+}
+.hor-card:hover{
+    width: 1030px;
+    height: 190px;
+    box-shadow:0px 0px 1px 1px #b3b3b3;
+}
+
+.hor-card .left-box{
+    height: 100%;
+    width: 20%;
+  display: flex;
+  align-items: center;
+
+}
+.left-box img{
+    width: 100%;
+height: 100%;
+object-fit: contain;  
+}
+.hor-card .right-box{
+ width: 70%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ margin-left: 10px;
+ position: relative;
+}
+.right-box h2{
+    font-size: 1.2rem;
+}
+.right-box .subtext{
+    font-size: 0.7rem;
+color: #6c757d;
+font-weight: 800;
+}
+.right-box .price{
+font-size: 1.4rem;
+font-weight: 800;
+position: relative;
+height: 19px;
+}
+.price .rupeesSign{
+    font-size: 0.8rem;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-weight:900;
+
+}
+.price .number{
+    position: absolute;
+ 
+    left: 20px;
+}
+
+
+.right-box .btn{
+    position: absolute;
+    right: 40px;
+    bottom:10px;
+  
+
+}
+.btn button{
+    background:#588157;
+    color: white;
+    margin: 4px;
+}
+.right-box hr{
+    width: 50%;
+}
+.right-box .category{
+font-size: 1.1rem;
+text-transform: capitalize;
+}
+@media  (max-width:500px){
+    .productsWrapper .productContainer{
+    
+        margin: 10px;
+    }
+    
+.hor-card{
+    width: 100%;
+    height: fit-content;
+   
+    padding: 0px;
+  
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hor-card:hover{
+    width: 100%;
+    height: fit-content;
+    box-shadow:0px 0px 1px 1px #b3b3b3;
+}
+
+.hor-card .left-box{
+    height: 100px;
+    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.left-box img{
+    width: 100%;
+height: 100%;
+object-fit: contain;  
+}
+.hor-card .right-box{
+ width: 80%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ margin-left: 0px;
+ position: relative;
+}
+.right-box h2{
+    font-size: 0.8rem;
+    text-overflow: clip;
+    overflow: hidden;
+ 
+
+}
+.right-box .subtext{
+    font-size: 0.7rem;
+color: #8eabc5;
+font-weight: 800;
+}
+.right-box .price{
+font-size: 1.4rem;
+font-weight: 800;
+position: relative;
+height: 19px;
+}
+.price .rupeesSign{
+    font-size: 0.8rem;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-weight:900;
+
+}
+.price .number{
+    position: absolute;
+ 
+    left: 20px;
+}
+
+
+.right-box .btn{
+    position:relative;
+    right: 0px;
+    bottom:0px;
+  
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+.btn button{
+    background:#588157;
+    color: white;
+    margin: 4px;
+   font-size: 0.8rem;
+}
+.right-box hr{
+    width:10%;
+}
+.right-box .category{
+font-size: 1.1rem;
+text-transform: capitalize;
+}
+}

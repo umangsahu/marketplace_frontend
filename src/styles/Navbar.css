@@ -1,0 +1,238 @@
+.Navbar-main {
+    width: 100%;
+    padding: 20px 40px;
+    background: #1e2f3a;
+    
+    color: white;
+}
+
+.Navbar-main .upper {
+    display: flex;
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+
+.Navbar-main .upper .left-side-logo {
+    width: 20%;
+
+}
+
+.Navbar-main .upper .right-side-others {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.Navbar-main .upper .right-side-others .searchContainer {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    background: white;
+    padding: 6px;
+    border-radius: 5px;
+
+}
+
+.searchContainer .search {
+    display: flex;
+    align-items: center;
+
+}
+
+.search input {
+    border-color: transparent;
+    width: 400px;
+    display: block;
+}
+
+.searchContainer span {
+    color: black;
+}
+
+.searchContainer button {
+    border-color: transparent;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    background: rgb(142, 82, 12);
+    color: white;
+}
+
+.Navbar-main .upper-right {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+.upper-right a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.Navbar-main .lower {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+
+.lower ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    color: white;
+    width: 100%;
+    gap: 30px;
+
+}
+
+.lower li a,#category {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    cursor:pointer;
+
+}
+.lower .active{
+    background: #3b6078;
+    padding:2px;
+    border-radius: 5px;
+    transition: all 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    color: white !important;
+}
+
+.lower .categoryContainer {
+    position: relative;
+
+}
+
+.lower .tooltip {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 250px;
+    height: fit-content;
+    text-transform: capitalize;
+    gap: 10px;
+    transition: all 1s ease-in-out;
+    z-index: 5;
+    
+}
+
+.lower .tooltip a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #b3b3b3;
+    line-height: 38px;
+    padding: 7px 20px 0px;
+
+}
+@media only screen and ( max-width:853px){
+    .Navbar-main .upper .right-side-others .searchContainer {
+    width:50% ;
+}
+
+.searchContainer .search {
+    width: 100%;
+}
+
+.search input {
+    width: 100%;  
+}
+
+
+.searchContainer button {
+  
+    width: 70px;
+    height: 25px;
+   
+    font-size: 0.6rem;
+}
+/* //upper right; */
+
+.Navbar-main .upper-right {
+   
+    width: 40%;
+    
+}
+.upper-right a {
+    text-decoration: none;
+    color: white;
+
+}
+}
+
+@media only screen and ( max-width:500px){
+    
+.mobilecontainer{
+    height: 60px;
+    width: 100%;
+    
+    background: #1e2f3a;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 10%;
+    padding: 10px;
+
+
+}
+.mobilecontainer .burger
+{
+    cursor: pointer;
+    position: relative;
+    /* overflow: hidden; */
+    
+}
+.burger .line{
+    height: 3px;
+    width: 30px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 3px;
+    transition:all 1.5s linear;
+}
+
+.burgerActive .line{
+   position: absolute;
+}
+.burgerActive .line1{
+    transform: rotate(50deg);
+}
+.burgerActive .line2{
+    transform: rotate(180deg);
+    opacity: 0;
+
+}
+.burgerActive .line3{
+    transform: rotate(130deg);
+}
+.searchbar{
+    width: 60%;
+    
+}
+.searchContainer{
+    width: 90%;
+    background: white;
+    display: flex;
+    border-radius: 5px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+
+}
+.searchContainer label{
+border-color:transparent;
+}
+}

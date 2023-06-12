@@ -1,0 +1,11 @@
+#modal-form{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    height: 350px;
+    width: 300px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}

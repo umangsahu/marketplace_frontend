@@ -1,0 +1,215 @@
+.productContainer{
+    min-height: 400px;
+    margin: 30px;
+    display: flex;
+
+}
+.productContainer .img{
+    width:30%;
+    height: 100%;
+}
+.productContainer .img .productimg{
+    width: 100%;
+    padding: 10px;
+    
+
+}
+.productContainer .img .productfullimage{
+   
+    position: absolute;
+  
+    left: 30%;
+    top: 10px;
+    width: 600px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px 1px #b3b3b3;
+    margin: auto;
+    z-index: 4;
+    object-fit: contain;
+    background: white;
+    transition: all 1s cubic-bezier(.5,-0.51,.76,1.71) ;
+
+}
+.productContainer .ProductDetails{
+    width:50%;
+}
+.ProductDetails .title{
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-top: 18px;
+    margin: 10px 0px;
+    line-break: loose;
+    line-height: 38px;
+}
+.ProductDetails .price-tegory{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #cd7323;
+
+}
+.price-tegory .category{
+    text-transform: capitalize;
+}
+.ProductDetails .Details{
+    margin: 24px 10px;
+font-size: 0.8rem;
+}
+.productContainer .productSidebar{
+    width:20%;
+ display: flex;
+ flex-direction: column;
+ padding: 20px;
+ padding-top:40px;
+}
+.productSidebar button{
+    height: 50px;
+    width: 100%;
+    margin-top:40px;
+    border-color: transparent;
+    border-radius: 5px;
+    color: white;
+    background: #2f2482;
+    cursor: pointer;
+}
+.productSidebar button .payNow{
+    height: 50px;
+    width: 100%;
+    margin-top:40px;
+    border-color: transparent;
+    border-radius: 5px;
+    color: white;
+    background: #2f2482;
+    cursor: pointer;
+    text-decoration: none;
+}
+@media (max-width:1000px){
+ 
+    .ProductDetails .title{
+        font-size: 1.0rem;
+    }
+    .productContainer .img .productfullimag {
+        left:0px;
+top: 8px;
+width: 516px;
+    }
+}
+
+@media (max-width:762px){
+ 
+    .productContainer{
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+    .productContainer .img{
+        height: 400px;
+        width: 400px;
+    }
+    .productContainer .img .productimg{
+        width: 100%;
+        padding: 10px;
+        pointer-events: none;
+        height: 100%;
+       
+        object-fit: contain;
+    }
+    
+    .productContainer .ProductDetails{
+        width:100%;
+    }
+    .ProductDetails .title{
+        font-size: 1.5rem;
+        font-weight: 800;
+        padding-top: 18px;
+        margin: 0px 0px;
+        line-break: loose;
+        line-height: 30px;
+    }
+    .ProductDetails .price-tegory{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: #cd7323;
+    
+    }
+    .price-tegory .category{
+        text-transform: capitalize;
+    }
+    .ProductDetails .Details{
+        margin: 24px 10px;
+    font-size: 0.8rem;
+    }
+    .productContainer .productSidebar{
+        width:100%;
+ 
+     flex-direction: row;
+
+    gap: 30px;
+    }
+   
+}
+@media (max-width:460px){
+ 
+    .productContainer{
+    width: 90%;
+    height: 100%;
+    }
+    .productContainer .img{
+        
+        width: 100%;
+        aspect-ratio: 1/1;
+     
+    }
+    .productContainer .img .productimg{
+        width: 100%;
+        padding: 10px;
+        pointer-events: none;
+        height: 100%;
+       
+        object-fit: contain;
+    }
+    
+    .productContainer .ProductDetails{
+        width:100%;
+      
+    }
+    .ProductDetails .title{
+        font-size: 1.5rem;
+        font-weight: 800;
+        padding-top: 18px;
+        margin: 0px 0px;
+        line-break: loose;
+        line-height: 30px;
+    }
+    .ProductDetails .price-tegory{
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        padding: 10px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: #cd7323;
+    
+    }
+    .price-tegory .category{
+        text-transform: capitalize;
+    }
+    .ProductDetails .Details{
+        margin: 24px 10px;
+    font-size: 0.8rem;
+    }
+    .productContainer .productSidebar{
+        width:100%;
+     flex-direction: row;
+    gap: 20px;
+    }
+   
+}
